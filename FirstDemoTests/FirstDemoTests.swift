@@ -17,6 +17,13 @@ final class FirstDemoTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func test_makeHeadline_shouldCapitalisePasseInString() {
+        let blogger = Blogger()
+        
+        let headline = blogger.makeHeadline(from: "the Accessibility inspector")
+    }
+    
 
     func test_numberOfVowels_whenGivenDominik_shouldReturn3() {
     let viewController = ViewController()

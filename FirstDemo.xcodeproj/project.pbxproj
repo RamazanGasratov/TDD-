@@ -16,6 +16,7 @@
 		AD371CED2BF7B61600152D1D /* FirstDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD371CEC2BF7B61600152D1D /* FirstDemoTests.swift */; };
 		AD371CF72BF7B61600152D1D /* FirstDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD371CF62BF7B61600152D1D /* FirstDemoUITests.swift */; };
 		AD371CF92BF7B61600152D1D /* FirstDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD371CF82BF7B61600152D1D /* FirstDemoUITestsLaunchTests.swift */; };
+		ADB75C4B2C0A0D7C00E8496C /* Blogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB75C4A2C0A0D7C00E8496C /* Blogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AD371CF22BF7B61600152D1D /* FirstDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD371CF62BF7B61600152D1D /* FirstDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDemoUITests.swift; sourceTree = "<group>"; };
 		AD371CF82BF7B61600152D1D /* FirstDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADB75C4A2C0A0D7C00E8496C /* Blogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				AD371CDE2BF7B61600152D1D /* Assets.xcassets */,
 				AD371CE02BF7B61600152D1D /* LaunchScreen.storyboard */,
 				AD371CE32BF7B61600152D1D /* Info.plist */,
+				ADB75C4A2C0A0D7C00E8496C /* Blogger.swift */,
 			);
 			path = FirstDemo;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				AD371CDA2BF7B61400152D1D /* ViewController.swift in Sources */,
 				AD371CD62BF7B61400152D1D /* AppDelegate.swift in Sources */,
+				ADB75C4B2C0A0D7C00E8496C /* Blogger.swift in Sources */,
 				AD371CD82BF7B61400152D1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
