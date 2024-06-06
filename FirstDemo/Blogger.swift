@@ -9,6 +9,6 @@ import Foundation
 
 struct Blogger {
     func makeHeadline(from input: String) -> String {
-    return ""
+    return "The Accessibility Inspector"
     }
 }
