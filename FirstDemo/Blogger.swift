@@ -9,6 +9,16 @@ import Foundation
 
 struct Blogger {
     func makeHeadline(from input: String) -> String {
-    return "The Accessibility Inspector"
+        return input.capitalized
+    }
+    
+    func reversString(from input: String) -> String {
+        return String(input.reversed())
+    }
+    
+    func headLineToFileName(from input: String) -> String {
+        return input
+        .lowercased()
+        .replacingOccurrences(of: " ", with: "_")
     }
 }

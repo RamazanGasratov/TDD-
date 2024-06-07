@@ -9,34 +9,57 @@ import XCTest
 @testable import FirstDemo
 
 final class FirstDemoTests: XCTestCase {
+    
+    var blogger: Blogger!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        blogger = Blogger()
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        blogger = nil
+    }
+    
+    //Тест для метода который переворачивает строку
+    
+    func test_reversString() {
+        let originalString = "hello"
+        let expectedReversedString = "olleh"
+        
+        let result = blogger.reversString(from: originalString)
+        
+        XCTAssertEqual(result, expectedReversedString)
+    }
+    
+    func test_HeadLineToFileName() {
+        let headline = "This is a Test Headline"
+        let expectedFilename = "this_is_a_test_headline"
+        
+        let result = blogger.headLineToFileName(from: headline)
+        
+        XCTAssertEqual(result, expectedFilename)
     }
     
     func test_makeHeadline_shouldCapitalisePassedInString() {
-    let blogger = Blogger()
-    let input = "the Accessibility inspector"
-    let result = blogger.makeHeadline(from: input)
-    let expected = "The Accessibility Inspector"
-    XCTAssertEqual(result, expected)
+        let input = "the Accessibility inspector"
+        let result = blogger.makeHeadline(from: input)
+        let expected = "The Accessibility Inspector"
+        XCTAssertEqual(result, expected)
     }
     
     func test_makeHeadline_shouldCapitalisePassedInString_2() {
-        let blogger = Blogger()
         let input = "The contextual action menu"
+        let result = blogger.makeHeadline(from: input)
+        let expected = "The Contextual Action Menu"
+        XCTAssertEqual(result, expected)
     }
     
     func test_numberOfVowels_whenGivenDominik_shouldReturn3() {
-    let viewController = ViewController()
-    let result = viewController.numberOfVowels(in: "Dominik")
-    XCTAssertEqual(result, 3,
-    "Expected 3 vowels in 'Dominik' but got \(result)")
-    
+        let viewController = ViewController()
+        let result = viewController.numberOfVowels(in: "Dominik")
+        XCTAssertEqual(result, 3,
+                       "Expected 3 vowels in 'Dominik' but got \(result)")
+        
     }
     
     func test_dictsAreQual() {
