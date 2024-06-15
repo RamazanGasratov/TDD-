@@ -21,11 +21,11 @@ jobs:
         with:
           ruby-version: 2.7
 
+      - name: Install bundler
+        run: gem install bundler -v 2.4.22
+
       - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+        run: bundle install
 
       - name: Setup Fastlane
         run: bundle exec fastlane ci_build
-
