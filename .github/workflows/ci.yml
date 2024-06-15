@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'  # Используйте версию Ruby, совместимую с вашим проектом
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Setup Fastlane
+        run: bundle exec fastlane ci_build
