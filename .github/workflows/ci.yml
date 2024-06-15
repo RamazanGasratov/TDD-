@@ -25,13 +25,13 @@ jobs:
         run: gem install bundler -v 2.4.22
 
       - name: Check for Gemfile
-        run: ls -la
+        run: ls -la /Users/ramazangasratov/Desktop/FirstDemo/
         continue-on-error: true
 
       - name: Install dependencies
         run: bundle install
-        working-directory: ./Users/ramazangasratov/Desktop/FirstDemo/Gemfile
+        working-directory: /Users/ramazangasratov/Desktop/FirstDemo/
 
       - name: Setup Fastlane
         run: bundle exec fastlane ci_build
-        working-directory: ./Users/ramazangasratov/Desktop/FirstDemo/Gemfile
+        working-directory: /Users/ramazangasratov/Desktop/FirstDemo/
