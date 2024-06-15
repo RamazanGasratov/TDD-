@@ -19,7 +19,7 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.7'  # Используйте версию Ruby, совместимую с вашим проектом
+          ruby-version: '2.6'  # Используйте версию Ruby, совместимую с вашим проектом
 
       - name: Install dependencies
         run: |
